@@ -3,8 +3,8 @@
   remote_user: vagrant
 
   roles:
-    - AptCacherNg/Client
-    - Gnome/minimal
+    # - AptCacherNg/Client
+    # - Gnome/minimal
     # - Jupyter
     # - Jupyter/VSCode Extension
     # - Project

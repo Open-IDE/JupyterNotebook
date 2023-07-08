@@ -1,7 +1,7 @@
 - name: Dev pkgs
   ansible.builtin.apt:
     pkg:
-    - htop
-    - nautilus
-    - gedit
+      - htop
+      - nautilus
+      - geany
   become: true
