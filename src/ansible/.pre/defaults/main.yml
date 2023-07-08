@@ -5,7 +5,7 @@ repo: [
   { repo: "https://github.com/Unicorn-OS/Snapcraft.git", name: "Snapcraft"},
   { repo: "https://github.com/Unicorn-OS/Apt-cacher.pkg.git", name: "Apt-cacher.pkg"},
   { repo: "https://github.com/Unicorn-OS/Gnome.desktop.git", name: "Gnome.desktop"},
-  { repo: "https://github.com/Unicorn-OS/OS.Change-password.git", name: "OS.Change-password"},
+  { repo: "https://github.com/Unicorn-OS/OS.Change-password.git", name: "os.Change-password"},
   { repo: "https://github.com/Source-Graph/VisualStudioCode.git", name: "VisualStudioCode"},
   ]
 
