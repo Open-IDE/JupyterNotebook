@@ -9,13 +9,14 @@
 
 
   roles:
-    # - AptCacherNg/Client
-    # - Gnome/minimal
-    # - Gnome/Setting
+  # Dev
+    - AptCacherNg/Client
+    - Gnome/minimal
+    - Gnome/Setting
+    - os/Change login password
     - .temp
-    # - os/Change login password
-  # ---
-    - Browser
+
+  # Jupyter
     - Jupyter
     - Jupyter/Notebook
     - Jupyter/VSCode Extension

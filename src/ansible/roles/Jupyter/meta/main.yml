@@ -1,2 +1,4 @@
 dependencies:
-- Jupyter/install
+  - Virtualenv
+  - Browser
+  - Jupyter/install

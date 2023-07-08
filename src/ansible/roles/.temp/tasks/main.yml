@@ -1,7 +1,5 @@
-- name: Dev pkgs
+- name: Gnome pkgs
   ansible.builtin.apt:
     pkg:
-      - htop
       - nautilus
-      - chromium
   become: true
