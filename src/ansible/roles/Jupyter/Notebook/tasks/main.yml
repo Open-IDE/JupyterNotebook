@@ -2,7 +2,7 @@
   ansible.builtin.file:
     path: "{{ jupiter_dir }}"
     state: directory
-    mode: 0644
+    mode: 0755
 
 
 - name: Install ipykernel
@@ -10,3 +10,16 @@
     name: ipykernel
     virtualenv: "{{ jupiter_dir }}/venv"
     virtualenv_site_packages: yes
+
+- name: Create Kernel
+  ansible.builtin.shell: "{{python3}} -m ipykernel install --user --name=myproject"
+  args:
+    chdir: "{{ jupiter_dir }}"
+    creates: "{{ jupiter_dir }}/venv/lib/python3.*/site-packages/pkg_resources/__pycache__"
+
+
+- name: Start .bash_history
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_env.HOME }}/.bash_history"
+    regexp: "^cd {{ jupiter_dir }} ; jupyter notebook"
+    line: "^cd {{ jupiter_dir }} ; jupyter notebook"
