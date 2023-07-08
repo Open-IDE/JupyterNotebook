@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.fn
+!.temp
+!get
+!Jupyter
+!Project
+!Virtualenv
