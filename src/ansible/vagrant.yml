@@ -15,6 +15,7 @@
     - .temp
     # - os/Change login password
   # ---
+    - Browser
     - Jupyter
     - Jupyter/Notebook
     - Jupyter/VSCode Extension
