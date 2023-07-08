@@ -1,0 +1,1 @@
+jupiter_dir: "{{ansible_env.HOME}}/src/notebook"

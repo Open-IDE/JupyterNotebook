@@ -14,9 +14,8 @@
     # - Gnome/Setting
     # - .temp
     # - os/Change login password
-    # - Snapcraft
-
-    - Visual Studio Code/Extension/Ansible
+  # ---
     # - Jupyter
     # - Jupyter/VSCode Extension
-    # - Project
+    - Jupyter/Notebook
+    # - Jupyter/Project

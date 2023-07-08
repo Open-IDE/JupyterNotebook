@@ -1,0 +1,5 @@
+- name: Install virtualenv
+  ansible.builtin.apt:
+    name: virtualenv
+    state: present
+  become: true
