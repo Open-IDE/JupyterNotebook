@@ -8,8 +8,9 @@
     # - Gnome/Setting
     # - .temp
     # - os/Change login password
+    # - Snapcraft
 
+    - Visual Studio Code
     # - Jupyter
     # - Jupyter/VSCode Extension
     # - Project
-    - Snapcraft
