@@ -1,0 +1,5 @@
+- name: Utils
+  ansible.builtin.apt:
+    pkg:
+    - htop
+  become: true

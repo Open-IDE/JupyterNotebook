@@ -5,6 +5,11 @@
   roles:
     - AptCacherNg/Client
     - Gnome/minimal
+    # - Jupyter
+    # - Jupyter/VSCode Extension
+    # - Project
+    - _vagrant
+
 
   tasks:
     - name: Change user password in Vagrant

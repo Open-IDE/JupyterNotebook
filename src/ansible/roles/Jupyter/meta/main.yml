@@ -1,3 +1,2 @@
 dependencies:
-- App/install
-- App/config
+- Jupyter/install
