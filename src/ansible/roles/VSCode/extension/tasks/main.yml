@@ -1,0 +1,10 @@
+
+- name: Jupyter Extensions
+  ansible.builtin.shell: "code --install-extension {{item}}"
+  args:
+    creates: "{{ lookup('ansible.builtin.env', 'HOME') }}/.vscode/extensions/{{item}}-*"
+  loop:
+  - ms-toolsai.jupyter
+  - ms-toolsai.jupyter-renderers
+  - ms-toolsai.jupyter-keymap
+  - jithurjacob.nbpreviewer
