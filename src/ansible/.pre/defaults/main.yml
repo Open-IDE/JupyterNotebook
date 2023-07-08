@@ -12,7 +12,7 @@ repo: [
   ]
 
 role: [
-  { git: "Virtualenv.python", name: "Virtualenv", path: "src/ansible/roles/Virtualenv"},
+  { git: "Virtualenv.python", name: "Virtualenv", path: "src/ansible/Virtualenv"},
   { git: "Browser", name: "Browser", path: "src/ansible/roles/Browser"},
   { git: "Snapcraft", name: "Snapcraft", path: "src/ansible/roles/Snapcraft"},
   { git: "Apt-cacher.pkg", name: "AptCacherNg", path: "src/ansible/roles/AptCacherNg"},
