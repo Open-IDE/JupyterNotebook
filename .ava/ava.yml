@@ -5,8 +5,8 @@
 
 #--------------------------------------------
 # Get repos
-- name: dev.yml
-  ansible.builtin.import_playbook: git/dev.yml
+- name: git.yml
+  ansible.builtin.import_playbook: git/git.yml
   tags: [dev, never]
 
 - name: test.yml
@@ -21,8 +21,8 @@
 # Init submodules
 - hosts: localhost
   tasks:
-  - name: init/dev.yml
-    ansible.builtin.shell: ansible-playbook init/dev.yml
+  - name: init/git.yml
+    ansible.builtin.shell: ansible-playbook init/git.yml
     tags: [dev, never]
 
   - name: init/test.yml
