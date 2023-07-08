@@ -2,6 +2,7 @@ vagrant: true
 
 # Change this file to add dependency artifacts, repos, & roles!
 repo: [
+  { repo: "git@github.com:Source-Graph/Virtualenv.python.git", name: "Virtualenv.python"},
   { repo: "https://github.com/Uni-Apps/Browser.git", name: "Browser"},
   { repo: "https://github.com/Unicorn-OS/Snapcraft.git", name: "Snapcraft"},
   { repo: "https://github.com/Unicorn-OS/Apt-cacher.pkg.git", name: "Apt-cacher.pkg"},
@@ -11,6 +12,7 @@ repo: [
   ]
 
 role: [
+  { git: "Virtualenv.python", name: "Virtualenv", path: "src/ansible/roles/Virtualenv"},
   { git: "Browser", name: "Browser", path: "src/ansible/roles/Browser"},
   { git: "Snapcraft", name: "Snapcraft", path: "src/ansible/roles/Snapcraft"},
   { git: "Apt-cacher.pkg", name: "AptCacherNg", path: "src/ansible/roles/AptCacherNg"},
