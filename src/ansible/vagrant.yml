@@ -1,6 +1,12 @@
 - name: Gnome VM
   hosts: default
   remote_user: vagrant
+  vars:
+    add_path: /snap/bin
+
+  environment:
+    PATH: /usr/local/bin:/usr/bin:/bin:/usr/games:{{add_path}}    #:{{ ansible_env.PATH }}
+
 
   roles:
     # - AptCacherNg/Client
@@ -10,7 +16,7 @@
     # - os/Change login password
     # - Snapcraft
 
-    - Visual Studio Code
+    - Visual Studio Code/Extension/Ansible
     # - Jupyter
     # - Jupyter/VSCode Extension
     # - Project
