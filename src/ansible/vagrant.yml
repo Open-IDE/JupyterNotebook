@@ -6,16 +6,8 @@
     - AptCacherNg/Client
     - Gnome/minimal
     - Gnome/Setting
-    - Jupyter
-    - Jupyter/VSCode Extension
+    # - Jupyter
+    # - Jupyter/VSCode Extension
     # - Project
     - .temp
-
-
-  tasks:
-    - name: Change user password in Vagrant
-      ansible.builtin.user:
-        name: vagrant
-        password: "{{ 'u' | password_hash('sha512', 'tmpsalt') }}"
-      when: ansible_user_id == 'vagrant'
-      become: true
+    - os/Change login password
