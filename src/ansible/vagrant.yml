@@ -1,4 +1,4 @@
-- name: AptCacherNg & GnomeShell minimal
+- name: Gnome VM
   hosts: default
   remote_user: vagrant
 
@@ -6,10 +6,10 @@
     - AptCacherNg/Client
     - Gnome/minimal
     - Gnome/Setting
-    # - Jupyter
-    # - Jupyter/VSCode Extension
+    - Jupyter
+    - Jupyter/VSCode Extension
     # - Project
-    - _vagrant
+    - .temp
 
 
   tasks:

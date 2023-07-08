@@ -1,5 +1,5 @@
 home: "{{lookup('ansible.builtin.env', 'HOME')}}"
-fn: "{{playbook_dir}}/roles/_fn/tasks/"
+fn: "{{playbook_dir}}/roles/.fn/tasks/"
 
 # User's
 project_env: ["{% if project is defined and project %}{{home}}/{{ project.src_path }}/venv{% endif %}"] # if defined and Not empty
