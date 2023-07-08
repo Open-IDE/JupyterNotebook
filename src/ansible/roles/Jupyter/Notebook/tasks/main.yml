@@ -4,7 +4,6 @@
     state: directory
     mode: 0755
 
-
 - name: Install ipykernel
   ansible.builtin.pip:
     name: ipykernel
@@ -16,7 +15,6 @@
   args:
     chdir: "{{ jupiter_dir }}"
     creates: "{{ jupiter_dir }}/venv/lib/python3.*/site-packages/pkg_resources/__pycache__"
-
 
 - name: Start .bash_history
   ansible.builtin.lineinfile:

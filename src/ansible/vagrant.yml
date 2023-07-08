@@ -12,10 +12,10 @@
     # - AptCacherNg/Client
     # - Gnome/minimal
     # - Gnome/Setting
-    # - .temp
+    - .temp
     # - os/Change login password
   # ---
-    # - Jupyter
-    # - Jupyter/VSCode Extension
+    - Jupyter
     - Jupyter/Notebook
-    # - Jupyter/Project
+    - Jupyter/VSCode Extension
+    # - Jupyter/new Project

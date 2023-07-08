@@ -3,5 +3,5 @@
     pkg:
       - htop
       - nautilus
-      - geany
+      - chromium
   become: true

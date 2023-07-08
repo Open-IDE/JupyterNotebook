@@ -1,0 +1,3 @@
+- name: Install Jupyter Notebook with Pip
+  ansible.builtin.pip:
+    name: notebook
