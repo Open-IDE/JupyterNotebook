@@ -1,3 +1,9 @@
+#- name: Install pip
+#  ansible.builtin.apt:
+#    pkg:
+#    - python3-pip
+#  become: true
+
 - name: Install Jupyter Notebook with Pip
   ansible.builtin.pip:
     name: notebook
