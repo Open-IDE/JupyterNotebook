@@ -1,11 +1,7 @@
 dep_home: ".dep"
-
-# Inventory
-static_inventory: "{{dep_home}}/pre/files/inventory/test/hosts"
-
-# Names
-depends: "{{dep_home}}/.mirror"
-role_depends: "role"
+mirror: ".mirror"
+role_dir: "{{dep_home}}"
+depends: "{{dep_home}}/{{mirror}}"
 
 # Folder
 depend_dir: "{{playbook_dir}}/{{depends}}"
@@ -13,4 +9,6 @@ depend_dir: "{{playbook_dir}}/{{depends}}"
 # SubFolders
 artifact_dir: "{{depend_dir}}/artifact"
 git_dir: "{{depend_dir}}/git"
-role_dir: "{{dep_home}}"
+
+# Inventory
+static_inventory: "{{dep_home}}/pre/files/inventory/test/hosts"
