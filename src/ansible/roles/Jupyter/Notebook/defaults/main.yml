@@ -1,3 +1,3 @@
-jupiter_dir: "{{ansible_env.HOME}}/src/.test/notebook"
+jupiter_dir: "{{ansible_env.HOME}}/src/.uni/test/notebook"
 
 python3: "{{jupiter_dir}}/venv/bin/python3"
