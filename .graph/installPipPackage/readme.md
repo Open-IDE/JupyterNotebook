@@ -4,6 +4,7 @@ sch: https://www.google.com/search?q=jupyter+notebook+pip+install+package
 https://chat.openai.com/share/4d442c65-0339-46bd-9e02-8268e5c9818e
 
 >Install OpenCV: In the first cell of your new Jupyter Notebook, type the following command to install OpenCV using pip:
+
 ```
 !pip install opencv-python
 ```
