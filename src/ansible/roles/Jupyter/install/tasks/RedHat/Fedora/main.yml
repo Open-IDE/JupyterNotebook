@@ -1,0 +1,8 @@
+- name: Install 
+  ansible.builtin.dnf:
+    name:
+      - pipx
+    state: latest
+  become: true
+
+- include_tasks: .fn/pipx Jupyter Notebook.yml
