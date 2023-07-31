@@ -6,6 +6,6 @@
 
   roles:
     - Jupyter
-    - Jupyter/Notebook
     - Jupyter/VSCode Extension
-#    - Jupyter/new Project
+    - Jupyter/bash history
+#    - new Project
