@@ -1,1 +1,7 @@
-- include_tasks: .fn/pip.yml
+- name: Install pip
+  ansible.builtin.apt:
+    pkg:
+    - python3-pip
+  become: true
+
+- include_tasks: .fn/pip Jupyter Notebook.yml

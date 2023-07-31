@@ -1,1 +1,7 @@
-- include_tasks: .fn/pipx.yml
+- name: Install pipx
+  ansible.builtin.apt:
+    pkg:
+    - pipx
+  become: true
+
+- include_tasks: .fn/pipx Jupyter Notebook.yml

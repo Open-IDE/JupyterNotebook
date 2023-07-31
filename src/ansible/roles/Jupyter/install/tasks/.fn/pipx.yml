@@ -1,9 +1,0 @@
-- name: Install pipx
-  ansible.builtin.apt:
-    pkg:
-    - pipx
-  become: true
-
-- name: Install Jupyter Notebook with PipX
-  community.general.pipx: 
-    name: notebook
