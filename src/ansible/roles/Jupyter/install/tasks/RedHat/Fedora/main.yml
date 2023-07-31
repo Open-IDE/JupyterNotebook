@@ -6,4 +6,4 @@
     state: latest
   become: true
 
-- include_tasks: .fn/pipx Jupyter Notebook.yml
+- include_tasks: ".fn/{{default_source}} Jupyter Notebook.yml"
