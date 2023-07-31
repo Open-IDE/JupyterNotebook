@@ -1,0 +1,17 @@
+- name: Create a directory for Jupiter
+  ansible.builtin.file:
+    path: "{{ jupiter_dir }}"
+    state: directory
+    mode: 0755
+
+- name: Install ipykernel
+  ansible.builtin.pip:
+    name: ipykernel
+    virtualenv: "{{ jupiter_dir }}/venv"
+    virtualenv_site_packages: yes
+
+- name: Create Kernel
+  ansible.builtin.shell: "{{python3}} -m ipykernel install --user --name=myproject"
+  args:
+    chdir: "{{ jupiter_dir }}"
+    creates: "{{ jupiter_dir }}/venv/lib/python3.*/site-packages/pkg_resources/__pycache__"

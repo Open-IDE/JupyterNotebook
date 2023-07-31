@@ -1,0 +1,6 @@
+- name: Start .bash_history
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_env.HOME }}/.bash_history"
+    regexp: "^cd {{ jupiter_dir }} ; jupyter notebook"
+    line: "cd {{ jupiter_dir }} ; jupyter notebook"
+
