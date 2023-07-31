@@ -1,6 +1,7 @@
-- name: Install 
+- name: Install pip & pipx
   ansible.builtin.dnf:
     name:
+      - python3-pip
       - pipx
     state: latest
   become: true

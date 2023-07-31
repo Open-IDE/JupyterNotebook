@@ -1,6 +1,7 @@
-- name: Install pipx
+- name: Install pip & pipx
   ansible.builtin.apt:
     pkg:
+    - python3-pip
     - pipx
   become: true
 
